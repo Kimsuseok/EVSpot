@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/stationImage"
+        android:contentDescription="@string/favorite"
+        android:src="@drawable/abc_ic_star_black_36dp" />
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status" />
+
+    <ImageView
+        android:id="@+id/stationImage"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:contentDescription="@string/station_image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/stationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stationImage"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:text="StationName" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stationName"
+        android:layout_alignEnd="@+id/imageButton"
+        android:padding="10dp"
+        android:text="StationAddress" />
+
+</RelativeLayout>
